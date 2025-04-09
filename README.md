@@ -87,7 +87,8 @@ npm -v # This should print the latest supported version
    * Create a `describe `block for the navigation tests.
    * Write tests to verify the following:
       * Clicking on "Card Set" in the side menu navigates to the page containing the card sets.
-      * Clicking on "About" in the side menu navigates to the About page.
+      * Clicking on "About" in the side me 
+      nu navigates to the About page.
       * Clicking on "Home" in the side menu navigates to the Home page.
 * Navigate to `cypress/e2e forms.cy.js`
 * Create tests to verify the functionality of both the `Create Set Form` and the `Add Card Form`:

@@ -1,0 +1,20 @@
+{
+  "name": "bertol",
+  "version": "1.0.0",
+  "description": "optimization and testing",
+  "main": "index.js",
+  "scripts": {
+    "gulp": "gulp",
+    "test": "gulp test",
+    "cypress": " gulp cypress"
+  },
+  "author": "morenike",
+  "license": "MIT",
+  "type": "module",
+  "devDependencies": {
+    "gulp": "^5.0.0",
+    "gulp-cli": "^3.0.0",
+    "gulp-shell": "^0.8.0",
+    "parcel": "^2.14.1"
+  }
+}
