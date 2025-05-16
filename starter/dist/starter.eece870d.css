@@ -1,4 +1,4 @@
-body main div .cardSets {
+.cardSets {
   border: 2px solid #d3d3d3;
   border-radius: 10px;
   flex-direction: column;
@@ -12,11 +12,11 @@ body main div .cardSets {
   box-shadow: 0 2px 5px #d3d3d3;
 }
 
-body main div .cardSets:hover {
+.cardSets:hover {
   border-color: #000;
 }
 
-body main div .cardContainer {
+.cardContainer {
   background-color: #0000;
   justify-content: center;
   align-items: center;
@@ -26,7 +26,7 @@ body main div .cardContainer {
   display: flex;
 }
 
-body main div.innerCard {
+.innerCard {
   text-align: center;
   width: 100%;
   height: 100%;
@@ -56,13 +56,13 @@ body main div.innerCard {
   font-size: 2rem;
 }
 
-body main div .description {
+.description {
   background-color: #dce7e8;
   font-size: 1.5rem;
   transform: rotateY(180deg);
 }
 
-body main div .cardPageContainer {
+.cardPageContainer {
   flex-direction: column;
   justify-content: space-around;
   width: 500px;
