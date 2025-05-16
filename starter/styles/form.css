@@ -2,21 +2,14 @@
 /* TODO: Manually optimize CSS styling. */
 /* Remove unused and unnecessary styling and selectors */
 
-form {}
-
 form {
   display: flex;
   flex-direction: column;
-}
-
-
-form {
-  max-width: 100px;
+  max-width: 400px;
   background-color: #ffffff;
   padding: 20px;
   border-radius: 8px;
   width: 100%;
-  max-width: 400px;
 }
 
 label {
@@ -27,10 +20,9 @@ label {
 }
 
 input[type="text"] {
-
   width: 100%;
   padding: 10px;
-  margin: 15px;
+  margin: 15px 0; /* Adjusted for top/bottom margin only */
   border: 1px solid #dddddd;
   border-radius: 4px;
   font-size: 16px;
@@ -38,14 +30,12 @@ input[type="text"] {
   transition: border-color 0.3s ease;
 }
 
-
-
 input[type="submit"] {
   width: 100%;
   padding: 10px;
   background-color: gray;
   border: none;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   color: #ffffff;
   font-size: 1rem;
   margin-top: 10px;
