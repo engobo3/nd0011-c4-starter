@@ -26,4 +26,3 @@ const addNavListener = (elementId, callback) => {
 renderHomePage();
 // Add event listeners to navigation items
 addListenerToNavigation();
-

@@ -156,7 +156,7 @@
       });
     }
   }
-})({"kMbAq":[function(require,module,exports,__globalThis) {
+})({"19Vyn":[function(require,module,exports,__globalThis) {
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
@@ -810,6 +810,6 @@ exports.export = function(dest, destName, get) {
     });
 };
 
-},{}]},["kMbAq","1Zb8H"], "1Zb8H", "parcelRequire5edc")
+},{}]},["19Vyn","1Zb8H"], "1Zb8H", "parcelRequire5edc")
 
 //# sourceMappingURL=starter.626c03d3.js.map

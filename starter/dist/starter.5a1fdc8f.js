@@ -156,7 +156,7 @@
       });
     }
   }
-})({"1QGgG":[function(require,module,exports,__globalThis) {
+})({"02ujV":[function(require,module,exports,__globalThis) {
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
@@ -1106,17 +1106,13 @@ const submitSet = (e, setCards)=>{
 };
 
 },{"./cardSetsPage.js":"kcdQE","./errors.js":"2r777","./utilityRenderFunctions.js":"5P3nZ","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"go7sF":[function(require,module,exports,__globalThis) {
-//DO NOT CHANGE ANYTHING IN THIS FILE//
-//This file is responsible for rendering the About page,
-//including loading any content about the application and organization.
-//This imports helper functions
-//This imports the image
+// src/aboutPage.js
+// This import likely gives you an object, not a direct string path
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "renderAboutPage", ()=>renderAboutPage);
 var _aboutImagePng = require("../images/aboutImage.png");
 var _aboutImagePngDefault = parcelHelpers.interopDefault(_aboutImagePng);
-// This function creates a header element
 var _utilityRenderFunctionsJs = require("./utilityRenderFunctions.js");
 const renderAboutPage = ()=>{
     // Clear the main content area
@@ -1135,12 +1131,18 @@ const renderAboutPage = ()=>{
     // Create and set up the paragraph
     let text = "Whether you're studying at night or during the day, Study Night's flashcard application is designed to help you grow your skills in any subject. Whether you're preparing for an exam or learning a new language, Study Night makes it easy to create flashcard sets that are available anytime, anywhere.\n\nStudy Night was created by experienced educators and developers who are passionate about helping students achieve their goals and making learning more accessible.";
     const aboutP = (0, _utilityRenderFunctionsJs.createElement)("p", text);
-    // Create and set up the image
-    const aboutImage = (0, _utilityRenderFunctionsJs.createImage)((0, _aboutImagePngDefault.default), "Child Studying");
+    // --- THIS IS THE CRITICAL CHANGE ---
+    // Access the .default property if aboutPageImage is an object
+    const imagePath = typeof (0, _aboutImagePngDefault.default) === 'string' ? (0, _aboutImagePngDefault.default) : (0, _aboutImagePngDefault.default).default;
+    // Optional: Log for verification
+    console.log('Resolved image path for src attribute:', imagePath);
+    // Create and set up the image using the resolved path
+    const imageElement = (0, _utilityRenderFunctionsJs.createImage)(imagePath, "Child Studying");
+    // --- END CRITICAL CHANGE ---
     // Append the text elements to the text container
     textContainer.append(heading, subHeading, aboutP);
     // Append the text container and image to the outer container
-    containerOuter.append(textContainer, aboutImage);
+    containerOuter.append(textContainer, imageElement);
     // Append the outer container to the main content area
     main.append(containerOuter);
 };
@@ -1174,6 +1176,6 @@ const renderHomePage = ()=>{
     main.append(homeContainer);
 };
 
-},{"../images/homePage.png":"kBXEb","./utilityRenderFunctions.js":"5P3nZ","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"kBXEb":[function() {},{}]},["1QGgG","j6hSo"], "j6hSo", "parcelRequire5edc")
+},{"../images/homePage.png":"kBXEb","./utilityRenderFunctions.js":"5P3nZ","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"kBXEb":[function() {},{}]},["02ujV","j6hSo"], "j6hSo", "parcelRequire5edc")
 
 //# sourceMappingURL=starter.5a1fdc8f.js.map
